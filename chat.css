@@ -1,0 +1,233 @@
+:root{
+  --primary-color:white;
+  --secondary-color:black;
+}
+
+.darktheme{
+  --primary-color:black;
+  --secondary-color:white;
+}
+
+
+body{
+  /*background-color: black;*  DARK MODE OPERATION*/
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+
+  
+}
+.message input {
+  width: 63%;
+  border: 2px solid;
+  position: fixed;
+  top: 94vh;
+  border-radius: 13px;
+  height: 4vh;
+}
+
+.chat_Details{ /*Chat details of user*/
+  position:absolute;
+  top: 20%;
+  border: 2px solid white;
+  width: 35%;
+  height: 97vh;
+  /*background-color: white;* ------------------------------- DARK MODE OPERATIONS*/
+  
+  background-color: rgb(235 238 238);
+  
+  /*background-color: var( --secondary-color);*/
+
+  overflow: scroll;
+  display: flex;
+  /* display: none; */
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+.chat_Details img{/*Display Profile of user*/
+  width: 15%;
+  border: 2px solid black;
+  margin: 2%;
+}
+.names{/*Names of user*/
+display: inline;
+position: relative;
+top: -30%;
+left: 10%;
+}
+
+.time{/*Last time of chat*/
+  display: inline;
+  position: relative;
+  top: -30%;
+  left: 15%;
+}
+.desc{/*Three dots with additional features*/
+  display: inline;
+  position: relative;
+  top: -30%;
+  left: 20%;  
+}
+
+.chat{
+  border: 2px solid black;
+  /*background-color: #ffffff;*/
+  background-color: var(--primary-color);
+  position: absolute;
+  width: 64%;
+  height: 97vh;
+  top:20%;
+  left: 36%;
+ 
+}
+.chat {
+  /* overflow: scroll; */
+  overflow-x: hidden;
+}
+.user_details{
+  border: 2px solid var(--secondary-color);
+
+  position: relative;
+  width:99%;
+  height: 5vh;
+  border-radius: 23px;
+}
+.fa-user{
+  position: relative;
+ /*color: aliceblue; DARK MODE*/
+ color: var(--secondary-color);
+  left: 3%;
+  font-size:5vh;
+}
+.fa-phone{
+  position: relative;
+  /*color: aliceblue; DARK MODE*/
+  color: var(--secondary-color);
+  left: 64%;
+  top: -4vh;
+}
+.fa-ellipsis{
+  position: relative;
+  /*color: aliceblue; DARK MODE*/
+  color: var(--secondary-color);
+  left: 84%;
+  top: -4vh;
+}
+.fa-video{
+  position: relative;
+  /*color: aliceblue; DARK MODE*/
+  color: var(--secondary-color);
+  left: 72%;
+  top: -4vh;
+}
+.user_name{
+  position: relative;
+  left: 12%;
+  top: -1vh;
+  /*color: aliceblue; DARK MODE*/
+  color: var(--secondary-color);
+  /* font-size: 115%; */
+}
+.last_seen{
+  position: relative;
+ /*color: aliceblue; DARK MODE*/
+ color: var(--secondary-color);
+  top: -1vh;
+  left: 21%;
+}
+.fa-message{
+  position: relative;
+  /*color: aliceblue;* DARK MODE*/
+  color: aqua;
+  font-size: 22vh;
+  top: 12vh;
+  left: 2vh;
+  display: block;
+  margin: 2%;
+}
+
+.fa-message:nth-child(2n)
+{
+  position: relative;
+  left: 72%;
+}
+.chat{
+  overflow: scroll;
+}
+h1{
+  
+  color:var(--secondary-color);
+  text-align: center;
+}
+@media screen and (max-width:1000px)
+{
+.chat{
+  position:absolute;
+  width:100vh;
+  left:2vh;
+  height:200vh;
+}
+.chat_Details{
+  display:none;
+}
+.user_name{
+  left:6vh;
+  font-size:1.7rem;
+}
+.last_seen {
+  font-size:1.7rem;
+  left:12vh
+}
+.fa-phone{
+  position:relative;
+  font-size:3vh;
+  left:78%
+}
+.fa-video{
+  position:relative;
+  font-size:3vh;
+  left:82%
+}
+.fa-ellipsis{
+  position:relative;
+  font-size:3vh;
+  left:85%;
+}
+}
+@media screen and (max-width:900px)
+{
+h1{
+  position:relative;
+  left:20%;
+}
+}
+@media screen and (max-width:600px)
+{
+ h1{
+  position:relative;
+  
+}
+.user_name{
+  left:6vh;
+  font-size:1.7rem;
+}
+.last_seen {
+  font-size:1.7rem;
+  left:12vh
+}
+.fa-phone{
+  position:relative;
+  font-size:3vh;
+  left:78%
+}
+.fa-video{
+  position:relative;
+  font-size:3vh;
+  left:82%
+}
+.fa-ellipsis{
+  position:relative;
+  font-size:3vh;
+  left:85%
+}
+}
